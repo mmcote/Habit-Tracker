@@ -40,4 +40,4 @@ GSON 2.7
   
   -<a href="https://github.com/joshua2ua/lonelyTwitter">lonelyTwitter</a> - Used as a guide to using GSON.
   
-  -<a href="http://www.tutorialspoint.com/android/android_datepicker_control.htm"> - Used as a guide to creating the datePickerDialog.
+  -<a href="http://www.tutorialspoint.com/android/android_datepicker_control.htm">Tutorials Point - Date Picker</a> - Used as a guide to creating the datePickerDialog.
