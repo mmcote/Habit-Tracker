@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">mmcote--HabitTracker</string>
+    <string name="habitListTitle">Daily Habit Status</string>
+    <string name="habitListAddHabit">Add Habit</string>
+    <string name="addHabitTitleBar">New Habit:</string>
+    <string name="addHabitEditText">Enter your new habit here!</string>
+    <string name="addHabitSubTitleBar">On these days:</string>
+    <string name="switchSunday">Sunday</string>
+    <string name="switchMonday">Monday</string>
+    <string name="switchTuesday">Tuesday</string>
+    <string name="switchWednesday">Wednesday</string>
+    <string name="switchThursday">Thursday</string>
+    <string name="switchFriday">Friday</string>
+    <string name="switchSaturday">Saturday</string>
+    <string name="addHabitButton">Save Habit</string>
+    <string name="viewSwitchSunday">Sunday</string>
+    <string name="viewHabitButton">All Habits</string>
+    <string name="viewHabitMediumText">Todays Completions:</string>
+    <string name="viewHabitLargeText">01234567890123456789</string>
+    <string name="viewHabitCompletionsNumber">13</string>
+</resources>

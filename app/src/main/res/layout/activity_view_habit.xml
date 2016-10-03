@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_habit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.ualberta.mmcote.mmcote__habittracker.ViewHabitActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/viewHabitMediumText"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:layout_above="@+id/completionListView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/viewHabitDeleteHabitButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/viewHabitCompletionsNumber"
+        android:id="@+id/viewHabitCompletionsNumber"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/viewHabitLargeText"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viewHabitButton"
+        android:id="@+id/viewHabitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/viewHabitDeleteHabitButton"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:text="Delete Habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewHabitDeleteHabitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light"
+        android:padding="10sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/completionListView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewHabitCompletionsNumber"
+        android:layout_above="@+id/monIcon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/viewHabitLargeText"
+        android:id="@+id/viewHabitLargeText"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textAlignment="textEnd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewHabitTotalCompletions"
+        android:id="@+id/sunIcon"
+        android:layout_alignParentStart="true"
+        android:padding="10sp" />
+
+    <TextView
+        android:text="Total Completions: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewHabitTotalCompletions"
+        android:textSize="26sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:padding="10dp"
+        android:layout_above="@+id/viewHabitButton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/monIcon"
+        android:padding="10sp"
+        android:layout_above="@+id/viewHabitTotalCompletions"
+        android:layout_toEndOf="@+id/sunIcon" />
+
+    <TextView
+        android:text="T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tuesIcon"
+        android:padding="10sp"
+        android:layout_alignBaseline="@+id/monIcon"
+        android:layout_alignBottom="@+id/monIcon"
+        android:layout_toEndOf="@+id/monIcon" />
+
+    <TextView
+        android:text="W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wedIcon"
+        android:padding="10sp"
+        android:layout_alignBaseline="@+id/tuesIcon"
+        android:layout_alignBottom="@+id/tuesIcon"
+        android:layout_toEndOf="@+id/tuesIcon" />
+
+    <TextView
+        android:text="R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thursIcon"
+        android:padding="10sp"
+        android:layout_alignBaseline="@+id/wedIcon"
+        android:layout_alignBottom="@+id/wedIcon"
+        android:layout_toEndOf="@+id/wedIcon" />
+
+    <TextView
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/satIcon"
+        android:padding="10sp"
+        android:layout_alignBaseline="@+id/friIcon"
+        android:layout_alignBottom="@+id/friIcon"
+        android:layout_toEndOf="@+id/friIcon" />
+
+    <TextView
+        android:text="F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friIcon"
+        android:padding="10sp"
+        android:layout_alignBaseline="@+id/thursIcon"
+        android:layout_alignBottom="@+id/thursIcon"
+        android:layout_toEndOf="@+id/thursIcon" />
+
+    <TextView
+        android:text="20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewHabitTotalCompletionsNumber"
+        android:textSize="50sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:layout_above="@+id/viewHabitDeleteHabitButton"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

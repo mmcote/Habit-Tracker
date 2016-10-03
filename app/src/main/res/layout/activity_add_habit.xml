@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_habit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.ualberta.mmcote.mmcote__habittracker.AddHabitActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/addHabitTitleBar"
+        android:id="@+id/addHabitTitleBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchSunday"
+        android:id="@+id/addHabitSunday"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:checked="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addHabitSubTitleBar"
+        android:padding="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchMonday"
+        android:id="@+id/addHabitMonday"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:checked="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addHabitSunday"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchTuesday"
+        android:id="@+id/addHabitTuesday"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:checked="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addHabitMonday"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchWednesday"
+        android:id="@+id/addHabitWednesday"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addHabitTuesday"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchThursday"
+        android:id="@+id/addHabitThursday"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addHabitWednesday"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchFriday"
+        android:id="@+id/addHabitFriday"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:checked="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addHabitThursday"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchSaturday"
+        android:id="@+id/addHabitSaturday"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:layout_below="@+id/addHabitFriday"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addHabitButton"
+        android:id="@+id/addHabitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_green_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addHabitEditText"
+        android:hint="@string/addHabitEditText"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:maxLength="20"
+        android:layout_below="@+id/addHabitTitleBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/addHabitStartDate"
+        android:layout_below="@+id/addHabitEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/addHabitStartDate"
+        android:padding="10sp"
+        android:hint="yyyy-mm-dd"
+        android:layout_above="@+id/addHabitSubTitleBar"
+        android:textAlignment="viewStart"
+        android:textStyle="normal|bold"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/addHabitSubTitleBar"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/addHabitSubTitleBar"
+        android:layout_below="@+id/addHabitStartDate"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Start on:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addHabitStartDate"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/addHabitEditText"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
