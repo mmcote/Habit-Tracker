@@ -109,9 +109,12 @@ public class HabitListAdapter extends ArrayAdapter<String> {
     }
 
     private Boolean checkIfToday(String habitDefinition) {
-        Integer dayOfWeek = Calendar.DAY_OF_WEEK;
+        Calendar day = Calendar.getInstance();
+        Integer dayOfWeek = day.get(Calendar.DAY_OF_WEEK);
         if (dayOfWeek == 7) {
             dayOfWeek = 0;
+        } else {
+            dayOfWeek = dayOfWeek - 1;
         }
         return this.habits.getHabit(habitDefinition).getDayBoolean(dayOfWeek);
     }
