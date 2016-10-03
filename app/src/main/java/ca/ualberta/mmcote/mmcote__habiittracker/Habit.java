@@ -61,7 +61,7 @@ public class Habit {
         }
     }
 
-    // Return the number of completions since the addition of the habit
+    //Return the number of completions since the addition of the habit
     public Integer numberOfCompletions() {
         return this.completionList.size();
     }
