@@ -17,6 +17,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 
+/**
+ * Created by mmcote on 2016-09-18.
+ * The purpose of this class is to allow the user to easily add a habit through the interface.
+ */
 
 public class AddHabitActivity extends AppCompatActivity {
     private EditText descriptionEditText; // habit description EditText

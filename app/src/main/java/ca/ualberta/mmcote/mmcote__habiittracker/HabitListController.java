@@ -22,6 +22,8 @@ import java.util.Observer;
 
 /**
  * Created by mmcote on 2016-09-25.
+ * The purpose of the habitListController is to act as the controller in the MVC model. It is the
+ * means of communication between the views and models.
  */
 
 public class HabitListController extends Observable {

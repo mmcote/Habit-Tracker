@@ -29,6 +29,11 @@ import android.widget.Toast;
 import java.util.Observable;
 import java.util.Observer;
 
+/**
+ * Created by mmcote on 2016-09-18.
+ * The purpose of this class is to easily allow users to see the habits they need to do today,
+ * and easily complete them from the list and get instant verification through a badge.
+ */
 
 public class MainActivity extends AppCompatActivity implements Observer {
     private HabitListController hlc;

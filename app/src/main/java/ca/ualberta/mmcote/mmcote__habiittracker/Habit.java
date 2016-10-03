@@ -7,7 +7,8 @@ import java.util.HashMap;
 
 /**
  * Created by mmcote on 2016-09-17.
- * todo: Provide a class description on the: PURPOSE, DESIGN RATIONALE, and OUTSTANDING ISSUES
+ * Habit has all the information needed to organize data and keep a history of when the habit was
+ * completed.
  */
 
 public class Habit {

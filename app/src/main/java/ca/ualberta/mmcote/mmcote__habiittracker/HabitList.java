@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 /**
  * Created by mmcote on 2016-09-18.
- * todo: Provide a class description on the: PURPOSE, DESIGN RATIONALE, and OUTSTANDING ISSUES
+ * The purpose of this class is to hold all of the habits created and still of interest.
  */
 
 public class HabitList {

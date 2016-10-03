@@ -16,6 +16,11 @@ import java.util.Comparator;
 
 /**
  * Created by mmcote on 2016-09-30.
+ *
+ * The purpose of this is to properly map view elements with the proper data they should be given.
+ * Also customizing the layout to portray information such as whether or not the habit should be done
+ * today or not, and whether it has been completed today or not.
+ *
  */
 
 public class HabitListAdapter extends ArrayAdapter<String> {

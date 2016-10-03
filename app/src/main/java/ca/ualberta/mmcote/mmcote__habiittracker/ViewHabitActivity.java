@@ -16,6 +16,12 @@ import android.widget.Toast;
 import java.util.Observable;
 import java.util.Observer;
 
+/**
+ * Created by mmcote on 2016-09-18.
+ * The purpose of this class is to easily allow users to see the habit and its details and keep an
+ * accurate history of when the habit was completed, also to delete habits and completions.
+ */
+
 public class ViewHabitActivity extends AppCompatActivity implements Observer {
     /* HabitListController is the controller which the view will communicate with, thereafter
         the controller will ask the model to manipulate the data stored within itself */
